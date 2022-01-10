@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html{
+    background-color: #181818;
+}
+.currentImage{
+    height: 4rem;
+    width: 4rem;
+}
+
+.footer,
+.insidefooter{
+    align-items: center;
+    justify-content: center;
+}
+
+.leftDiv{
+    align-items: center;
+    justify-content: start;
+}
+.rightDiv{
+    align-items: center;
+    justify-content: end;
+}
+
+.currentSongName{
+    font-size: .6rem;
+}
+
+.rightIcons,
+.previousSong,
+.nextSong{
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.playPauseSong{
+    color: #b3b3b3;
+}
+
+.player{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+}
+
+@media screen and (max-width:768px) {
+    .rightDiv{
+        display: none !important;
+    }
+    .barContainer{
+        display: none !important;
+    }
+
+    .middleDiv .rightIcons{
+        display: none;
+    }
+    .songButtons{
+        justify-content: end !important;
+    }
+}
+
+.leftMenu{
+    height: calc(100% - 120px) !important;
+    background-color: black;
+    min-width: 20% !important;
+}
+
+.rightMenu{
+    height: calc(100% - 120px) !important;
+    margin-left: 19rem;
+    align-self: center;
+    justify-self: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .rightMenu{
+        margin-left: 12.3rem!important;
+    }
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.mainSongImage{
+    margin: 25px;
+    height: 23rem;
+    width: 17rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://www.bt21bts.co/wp-content/uploads/2021/05/bts-butter-album-cover.jpg");
+}
+
+.nowPlaying{
+    font-size: 1rem;
+}
+
+.mainSongName{
+    font-size: 2rem;
+}
+.mainSongArtist{
+    font-size: 1.2rem;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward{
+    cursor: pointer;
+}
+
+.barContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

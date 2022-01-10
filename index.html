@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="mainBox" style="display: flex !important; background-color: #181818;">
+        <div class="leftMenu w3-sidebar w3-bar-block text-white">
+            <h3 class="w3-bar-item">
+                <img src="https://www.pngkey.com/png/full/190-1907978_spotify-logo-png-white-spotify-logo-white-transparent.png" alt="" style="width: 11rem;"></h3> 
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><g fill="#ffffff"><path d="M85.5,3.59367c-0.74385,0 -1.48476,0.23593 -2.11746,0.71473l-78.66,61.39301c-1.4706,1.1628 -1.74393,3.31125 -0.58113,4.81605c1.1628,1.4706 3.31125,1.74393 4.81605,0.58113l4.72254,-3.68718v89.90859c0,1.881 1.539,3.42 3.42,3.42h47.88v-61.56h41.04v61.56h47.88c1.881,0 3.42,-1.539 3.42,-3.42v-89.90859l4.72254,3.68718c0.6498,0.4788 1.36506,0.72141 2.11746,0.72141c1.026,0 2.0146,-0.44754 2.69859,-1.30254c1.1628,-1.5048 0.88947,-3.65325 -0.58113,-4.81605l-78.66,-61.39301c-0.6327,-0.4788 -1.37361,-0.71473 -2.11746,-0.71473zM119.7,17.1v3.59367l20.52,16.00453v-19.5982z"></path></g></g></svg> Home
+            </a>
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><g fill="#ffffff"><path d="M64.125,14.25c-27.46081,0 -49.875,22.41419 -49.875,49.875c0,27.46081 22.41419,49.875 49.875,49.875c12.45449,0 23.83319,-4.64533 32.59131,-12.24609l3.03369,3.03369v9.2124l42.75,42.75l14.25,-14.25l-42.75,-42.75h-9.2124l-3.03369,-3.03369c7.60076,-8.75812 12.24609,-20.13682 12.24609,-32.59131c0,-27.46081 -22.41419,-49.875 -49.875,-49.875zM64.125,28.5c19.75953,0 35.625,15.86546 35.625,35.625c0,19.75953 -15.86547,35.625 -35.625,35.625c-19.75954,0 -35.625,-15.86547 -35.625,-35.625c0,-19.75954 15.86546,-35.625 35.625,-35.625z"></path></g></g></svg> Search
+            </a>
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><g fill="#ffffff"><path d="M17.1,28.5v22.8h22.8v-22.8zM68.4,34.2c-2.05562,-0.02907 -3.96766,1.05094 -5.00396,2.82648c-1.0363,1.77554 -1.0363,3.97151 0,5.74705c1.0363,1.77554 2.94834,2.85555 5.00396,2.82648h79.8c2.05562,0.02907 3.96766,-1.05094 5.00396,-2.82648c1.0363,-1.77554 1.0363,-3.97151 0,-5.74705c-1.0363,-1.77554 -2.94834,-2.85555 -5.00396,-2.82648zM17.1,74.1v22.8h22.8v-22.8zM68.4,79.8c-2.05562,-0.02907 -3.96766,1.05094 -5.00396,2.82648c-1.0363,1.77554 -1.0363,3.97151 0,5.74705c1.0363,1.77554 2.94834,2.85555 5.00396,2.82648h79.8c2.05562,0.02907 3.96766,-1.05094 5.00396,-2.82648c1.0363,-1.77554 1.0363,-3.97151 0,-5.74705c-1.0363,-1.77554 -2.94834,-2.85555 -5.00396,-2.82648zM17.1,119.7v22.8h22.8v-22.8zM68.4,125.4c-2.05562,-0.02907 -3.96766,1.05094 -5.00396,2.82648c-1.0363,1.77554 -1.0363,3.97151 0,5.74705c1.0363,1.77554 2.94834,2.85555 5.00396,2.82648h79.8c2.05562,0.02907 3.96766,-1.05094 5.00396,-2.82648c1.0363,-1.77554 1.0363,-3.97151 0,-5.74705c-1.0363,-1.77554 -2.94834,-2.85555 -5.00396,-2.82648z"></path></g></g></svg> You Library
+            </a>
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><path d="M0.49609,171.49609v-171h171v171z" fill="#b3b3b3"></path><g fill="#000000"><path d="M131.1,79.8h-39.9v-39.9c0,-3.1464 -2.5536,-5.7 -5.7,-5.7c-3.1464,0 -5.7,2.5536 -5.7,5.7v39.9h-39.9c-3.1464,0 -5.7,2.5536 -5.7,5.7c0,3.1464 2.5536,5.7 5.7,5.7h39.9v39.9c0,3.1464 2.5536,5.7 5.7,5.7c3.1464,0 5.7,-2.5536 5.7,-5.7v-39.9h39.9c3.1464,0 5.7,-2.5536 5.7,-5.7c0,-3.1464 -2.5536,-5.7 -5.7,-5.7z"></path></g></g></svg>Ceate PlayList
+            </a>
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="#b3b3b3"></path><g fill="black"><path d="M117.5625,28.5c-13.50188,0 -25.29375,9.804 -32.02687,16.83637c-6.669,-7.04662 -18.40388,-16.83637 -32.09813,-16.83637c-17.67712,0 -32.0625,14.38538 -32.0625,32.0625c0,29.64 49.80375,69.36188 59.78588,77.02838l4.33912,3.32737l4.33913,-3.3345c9.98212,-7.65938 59.78588,-47.38125 59.78588,-77.02125c0,-17.67712 -14.38538,-32.0625 -32.0625,-32.0625z" opacity="0.13"></path><path d="M117.5625,21.375c-20.62687,0 -32.0625,14.89125 -32.0625,14.89125c0,0 -11.43562,-14.89125 -32.0625,-14.89125c-21.64575,0 -39.1875,17.54175 -39.1875,39.1875c0,39.1875 71.25,89.0625 71.25,89.0625c0,0 71.25,-49.875 71.25,-89.0625c0,-21.64575 -17.54175,-39.1875 -39.1875,-39.1875zM85.5,131.94075c-24.81637,-19.04513 -57,-50.673 -57,-71.37825c0,-13.75125 11.18625,-24.9375 24.9375,-24.9375c17.11425,0 32.0625,20.71238 32.0625,20.71238c0,0 15.2475,-20.71238 32.0625,-20.71238c13.75125,0 24.9375,11.18625 24.9375,24.9375c0,20.70525 -32.18362,52.33313 -57,71.37825z"></path></g></g></svg> Liked Songs
+            </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="w3-bar-item w3-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="25" height="25"viewBox="0 0 171 171"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99219v-171.99219h171.99219v171.99219z" fill="none"></path><g fill="#ffffff"><path d="M71.25,14.25v64.125h-28.5l42.75,42.75l42.75,-42.75h-28.5v-64.125zM14.25,142.5v14.25h142.5v-14.25z"></path></g></g></svg> Install Now
+            </a>
+        </div>
+
+        <div class="rightMenu text-white w-100">
+            <div class="details">
+                <div class="nowPlaying">Currently Playing</div>
+                <div class="mainSongImage"></div>
+                <div class="mainSongName">Song Name</div>
+                <div class="mainSongArtist">Music Artist</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <footer class="w-100" style="height: 120px; padding: .5rem; bottom: 0;">
+            <div class="insidefooter p-1 d-flex">
+                <div class="leftDiv d-flex" style="width: 25%;">
+                    <div class="currentSongImg">
+                        <img class="currentImage" src="https://www.bt21bts.co/wp-content/uploads/2021/05/bts-butter-album-cover.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="currentSongName ms-3 text-start text-white">Butter</div>
+                        <div class="currentSongArtist ms-3 text-start text-white">
+                            <p>BTS</p>
+                        </div>
+                    </div>
+
+                    <div class="likeButton ms-4" style="margin-top: -8px;">
+                        <i class="uil uil-heart rightIcons"></i>
+                    </div>
+                </div>
+
+                <div class="middleDiv text-white" style="width: 50%;">
+                    <div class="songButtons d-flex align-items-center justify-content-center gap-3">
+                        <i class="uil uil-arrow-random rightIcons"></i>
+                        <div class="previousSong" onclick="previousSong()">
+                            <i class="fa fa-step-backward fa-2x"></i>
+                        </div>
+
+                        <div class="playPauseSong" onclick="playPauseSong()">
+                            <i class="fa fa-play-circle fa-3x"></i>
+                        </div>
+                        <div class="nextSong" onclick="nextTrack()">
+                            <i class="fa fa-step-forward fa-2x"></i>
+                        </div>
+
+                        <i class="uil uil-exchange-alt rightIcons"></i>
+                    </div>
+
+                    <div class="barContainer">
+                        <div class="currentTime">0.00</div>
+                        <input type="range" min="1" max="100" value="0" class="songBar w-75" onchange="seekTo()">
+                        <div class="totalDuration">0.00</div>
+                    </div>
+                </div>
+
+
+                <div class="rightDiv d-flex gap-3" style="width: 25%;">
+                    <i class="uil-uil-bars rightIcons"></i>
+                    <i class="uil-uil-boombox rightIcons"></i>
+                    <i class="uil-uil-volume rightIcons"></i>
+
+                    <div class="barContainer">
+                        <i class="fa fa-volume-down fa-2x"></i>
+                        <input type="range" min="0" max="100" value="50" class="volumeBar" onchange="setVolume()">
+                        <i class="fa fa-volume-up fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
